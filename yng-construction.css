@@ -17,21 +17,20 @@ body{
 #header-navigation{
     display: flex;
     justify-content: space-between;
+    padding: 10px;
     
 }
 
 nav{
-    border: 1px solid red;
-    width: 100%;
     display: flex;
     justify-content: space-around;
+    padding: 0;
 }
 
 /* styling the list items */
 li{
     list-style: none;
-    border: 1px solid red;
-    padding: 10px 30px;
+    padding: 5px 30px;
     font-size: 100%;
 }
 
@@ -48,7 +47,7 @@ h1{
 }
 
 #image-container{
-    padding: 10px 150px;
+    padding: 0px 20px 110px 20px;
     border: 1px solid yellow;
     background-image: url(consrtuction\ 2.avif);
     background-repeat: no-repeat;
@@ -56,6 +55,12 @@ h1{
     background-size: 100%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+#text-container{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 10px;
 }
 
 /* styling the paragraph found inside my text-container  */
@@ -66,28 +71,9 @@ h1{
     justify-content: center;
     font-size: 25px;
 }
-/* styling the ordered list */
-ol{
-    display: flex;
-    width: 90%;
-    height: 50px;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 100px;
-    list-style: none;
-}
-/* styling my achor */
-a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 10px;  
-}
+
 /* making the home bar active */
-#home{
-    padding-top: 10px;
-}
+
 #home:active{
     background-color: rgb(210, 191, 228);
     border: 1px solid rgb(146, 92, 209);
@@ -96,9 +82,7 @@ a{
     border-bottom: transparent;
 }
 /* making the about bar active */
-#about{
-    padding-top: 10px;
-}
+
 #about:active{
     background-color: rgb(210, 191, 228);
     border: 1px solid rgb(146, 92, 209);
@@ -107,9 +91,7 @@ a{
     border-bottom: transparent;
 }
 /* making the experience bar active */
-#experience{
-    padding-top: 10px;
-}
+
 #experience:active{
     background-color: rgb(210, 191, 228);
     border: 1px solid rgb(146, 92, 209);
@@ -118,9 +100,7 @@ a{
     border-bottom: transparent;
 }
 /* making the contact ative */
-#contact{
-    padding-top: 10px;
-}
+
 #contact:active{
     background-color: rgb(210, 191, 228);
     border: 1px solid rgb(146, 92, 209);
@@ -128,15 +108,16 @@ a{
     border-top-right-radius: 20px;
     border-bottom: transparent;
 }
+
 /* styling the button bar  */
 #button{
-    width: 20%;
-    margin-left: 700px;
-    margin-top: 10px;
-    border-radius: 20px;
-    height: 45px;
+    padding: 10px;
+    width: 30%;
+    border-radius: 10px ;
     background-color: rgb(198, 183, 211);
-    border-color: rgb(119, 29, 204);
+    border: transparent;
+    border-left: 2px solid yellow;
+    border-right: 2px solid yellow;
     color: blueviolet;
     font-size: 20px;
     letter-spacing: 3px;
@@ -162,9 +143,7 @@ a{
 }
 /* styling the serch bar */
 input[type="search"]{
-    width: 20%;
-    height: 50%;
-    margin-left: 69px;
+    padding: 0px 80px;  
     border-radius: 10px;
     background-color: rgb(240, 234, 245);
     border-color:  rgb(112, 36, 184);
