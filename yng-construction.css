@@ -348,4 +348,26 @@ font-style: italic;
         margin: 0px;
         height: 100%;
     }
+    #footer1{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid red;
+        padding: 10px;
+        
+    }
+    #ft{
+        display: none;
+        padding: 20px;
+    }
+
+    #loc-phone{
+        padding: 20px;
+        text-align: center;
+        margin-left: 5px;
+        white-space: nowrap;
+    }
+    footer{
+        width: 100%;
+    }
+
 }
