@@ -1,73 +1,122 @@
- /* global selectors */
-*{
+/* ========== Reset & Base Styles ========== */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main{
-   background-color: rgb(214, 189, 238);
-
-}
-
-body{
+body {
     max-width: 1080px;
     margin: 0 auto;
 }
 
-#header-navigation{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    
+main {
+    background-color: rgb(214, 189, 238);
 }
 
-nav{
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-}
-
-/* styling the list items */
-li{
+li {
     list-style: none;
     padding: 5px 30px;
     font-size: 100%;
 }
 
-svg{
-
+svg {
 }
 
-/*  styling the header found in the text-container  */
-h1{
+/* ========== Typography ========== */
+h1 {
     font-weight: 200;
     letter-spacing: 1px;
     font-size: 75px;
     text-align: center;
 }
 
-#image-container{
+h3 {
+    padding: 20px;
+    white-space: nowrap;
+    text-align: center;
+    border-bottom: 1px solid rgb(95, 51, 109);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    text-shadow: 2px 2px 2px rgb(47, 51, 43);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+a:hover {
+    color: rgb(130, 236, 236);
+    font-style: italic;
+}
+
+/* ========== Header & Navigation ========== */
+#header-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+#nav-info-header {
+    width: 30%;
+    padding-left: 50px;
+    padding-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    height: 80px;
+}
+
+input[type="search"] {
+    padding: 0px 80px;
+    border-radius: 10px;
+    background-color: rgb(240, 234, 245);
+    border-color: rgb(112, 36, 184);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#home:active,
+#about:active,
+#experience:active,
+#contact:active {
+    background-color: rgb(210, 191, 228);
+    border: 1px solid rgb(146, 92, 209);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: transparent;
+}
+
+/* ========== Hero / Image Section ========== */
+#image-container {
     padding: 0px 20px 100px 20px;
     border: 1px solid rgb(0, 0, 0);
-    background-image: url(consrtuction\ 2.avif);
+    background-image: url("consrtuction 2.avif");
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
     background-size: 100%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-#text-container{
+#text-container {
     display: flex;
     flex-direction: column;
     padding: 60px 10px;
     align-items: center;
 }
 
-/* styling the paragraph found inside my text-container  */
-#moto{
+#moto {
     font-style: italic;
     display: flex;
     letter-spacing: 2px;
@@ -75,49 +124,17 @@ h1{
     font-size: 25px;
 }
 
-/* making the home bar active */
-
-#home:active{
-    background-color: rgb(210, 191, 228);
-    border: 1px solid rgb(146, 92, 209);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom: transparent;
-}
-/* making the about bar active */
-
-#about:active{
-    background-color: rgb(210, 191, 228);
-    border: 1px solid rgb(146, 92, 209);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom: transparent;
-}
-/* making the experience bar active */
-
-#experience:active{
-    background-color: rgb(210, 191, 228);
-    border: 1px solid rgb(146, 92, 209);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom: transparent;
-}
-/* making the contact ative */
-
-#contact:active{
-    background-color: rgb(210, 191, 228);
-    border: 1px solid rgb(146, 92, 209);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom: transparent;
+#content {
+    display: flex;
+    justify-content: center;
 }
 
-/* styling the button bar  */
-#button{
+/* ========== Button ========== */
+#button {
     padding: 10px;
     margin-top: 30px;
-    width:40%;
-    border-radius: 20px ;
+    width: 40%;
+    border-radius: 20px;
     background-color: rgb(128, 109, 236);
     border: transparent;
     border-left: 2px solid rgb(0, 255, 21);
@@ -128,59 +145,35 @@ h1{
     box-shadow: 2px 4px rgb(37, 37, 37);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-/* adding effects to button */
-#button:hover{
-    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+#button:hover {
+    transition: ease-in 2s;
     background-color: rgb(95, 42, 145);
     border-color: aqua;
     color: aqua;
     font-style: italic;
     box-shadow: 3px 2px 2px black;
     transform: scale(0.9);
-    transition: ease-in 2s;
-}
-/* styling the header-navigation */
-#nav-info-header{
-    width: 30%;
-    padding-left: 50px;
-    padding-top: 5px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    height: 80px;
-}
-/* styling the serch bar */
-input[type="search"]{
-    padding: 0px 80px;  
-    border-radius: 10px;
-    background-color: rgb(240, 234, 245);
-    border-color:  rgb(112, 36, 184);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-/* styling my content [ this is where i created two sections, one for the webs introduction and the section containing info about the website]  */
-#content{
-    display: flex;
-    justify-content: center;
-
 }
 
-
-/* styling the selectors[ these are info talking about the website. The first section asking wuestions and the second section giving a short description about the website]  */
-#selectors{
-    margin: -60px 0px 0px 0px;
+/* ========== Info Selectors Section ========== */
+#selectors {
+    margin: -60px 0 0 0;
     background-color: rgb(205, 184, 224);
     box-shadow: 0px 0px 19px rgb(187, 184, 186);
     border: 1px solid rgb(150, 30, 230);
     border-radius: 10px;
     font-size: 95%;
     width: 90%;
-    padding: 10px 20px 30px 20px ;
+    padding: 10px 20px 30px 20px;
     display: flex;
 }
-#Selector1{
+
+#Selector1 {
     padding: 10px;
 }
-/* #akiti is for the paragrahps found in my two sections  */
-#akiti{
+
+#akiti {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
     text-align: center;
@@ -188,38 +181,23 @@ input[type="search"]{
     border-color: rgb(166, 145, 185);
     font-size: 95%;
 }
-/* styling the paragraph for intro text */
-#int-text{
-    margin-top: 8px auto;
-}
-/* the headers found in my two sections  */
-h3{
-   padding: 20px;
-   white-space: nowrap;
-   text-align: center;
-   border-bottom: 1px solid rgb(95, 51, 109);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    align-items: center;
+
+#int-text {
+    margin: 8px auto;
 }
 
-/* styling the image-container */
-
-a:hover{
-    color: rgb(130, 236, 236);
-    font-style: italic;
-}
-#text-about{
+#text-about {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     width: 100%;
     height: 90px;
 }
-/* styling the section for #section-info and #section-info2 */
-.section{
+
+/* ========== Section Content ========== */
+.section {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
-    border: 1px solid rgb(195, 104, 207);
     width: 90%;
     padding: 20px;
     letter-spacing: normal;
@@ -229,147 +207,145 @@ a:hover{
     display: flex;
 }
 
-article{
+article {
     display: flex;
     justify-content: center;
-    margin: 20px 0px;
+    margin: 20px 0;
 }
 
-#section-info{
+#section-info {
     width: 50%;
     padding: 20px;
     font-size: 80%;
 }
 
-/* styling the image in the second section with id='section2-info'  */
-img{
+img {
     width: 100%;
     height: 80%;
     margin-top: 18%;
     border-radius: 20px;
 }
 
-#int-heading{
+#int-heading {
     white-space: nowrap;
-    padding: 0px  0px 20px;
+    padding: 0 0 20px;
 }
-/* this identifies the horizontal ruler in the tag called span with id="section-info" */
-#ruler{
+
+#ruler {
     background-color: rgb(108, 30, 187);
     border-color: rgb(166, 145, 185);
-    margin-top: 9px;
-    margin-bottom: 9px;
+    margin: 9px 0;
 }
-/* styling the footer  */
-footer{
+
+/* ========== Footer ========== */
+footer {
     display: flex;
     justify-content: space-around;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(0, 0, 0);
     border-top: transparent;
 }
-/* styling the footer */
-#footer1{
+
+#footer1 {
     color: rgb(255, 255, 255);
 }
-h5{
-    display: flex;
-    justify-content: center;
-    text-shadow: 2px 2px 2px rgb(47, 51, 43);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style: italic;
-    width: 100%;
-    height: 40px;
-    align-items: center;
-}
-/* styling the paragraph in the footer container  */
-#socials-contact{
+
+#socials-contact {
     width: 100%;
     height: 190px;
     display: flex;
     flex-direction: column;
 }
-/* styling the list with id="s-c" */
-#s-c{
-width: 100%;
-height: 50px;
-margin-left: -70px;
-font-style: italic;
+
+#s-c {
+    width: 100%;
+    height: 50px;
+    margin-left: -70px;
+    font-style: italic;
 }
-/* styling the ordere lists */
-#ft1{
+
+#ft1 {
     width: 100%;
     height: auto;
     text-align: center;
 }
-/* styling the list in #ft1  */
-#loc-phone{
+
+#loc-phone {
     width: 100%;
     height: 50px;
     margin-left: -50px;
 }
 
-
-/* working on the media screen */
-@media (max-width: 640px){
-    body{
+/* ========== Responsive Styles ========== */
+@media (max-width: 640px) {
+    body {
         width: 185%;
     }
-    main{
+
+    main {
         width: 100%;
     }
-    #image-container{
+
+    #image-container {
         width: 100%;
-        padding:  0px 0px 80px 0px;
+        padding: 0 0 80px;
         background-size: cover;
         border: 1px solid red;
     }
-    #search-bar{
+
+    #search-bar {
         width: 50%;
     }
-    #button{
+
+    #button {
         width: 80%;
     }
-    #selectors{
+
+    #selectors {
         display: flex;
         flex-direction: column;
     }
-    .section{
+
+    .section {
         display: flex;
         flex-direction: column;
     }
-    #section-info{
+
+    #section-info {
         width: 100%;
     }
-    #int-heading{
+
+    #int-heading {
         white-space: wrap;
     }
-    img{
-        margin: 0px;
+
+    img {
+        margin: 0;
         height: 100%;
     }
-    #footer1{
+
+    #footer1 {
         padding: 10px;
-        margin: 30px 0px 30px;
-        
+        margin: 30px 0;
     }
-    #ft{
+
+    #ft {
         display: none;
         padding: 20px;
     }
 
-    #loc-phone{
+    #loc-phone {
         padding: 20px;
         text-align: center;
         margin-left: 5px;
         white-space: nowrap;
     }
-    footer{
+
+    footer {
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 10px;
         font-size: 150%;
     }
-
 }
