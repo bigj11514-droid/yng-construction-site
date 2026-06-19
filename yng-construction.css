@@ -35,7 +35,7 @@ h1 {
     font-size: 75px;
     text-align: center;
     color: rgb(32, 32, 32);
-    text-transform: uppercase;
+        line-height: 1.7;
 }
 
 h3 {
@@ -74,6 +74,16 @@ a:hover {
 nav {
     display: flex;
     justify-content: space-around;
+
+    p,
+    #akiti,
+    #section-info,
+    #text-about,
+    #socials-contact,
+    #s-c {
+        letter-spacing: 0.02em;
+        color: rgb(58, 58, 58);
+    }
     padding: 0;
 }
 
